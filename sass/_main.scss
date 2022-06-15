@@ -39,17 +39,21 @@ main {
     flex-direction: column;
     padding-bottom: var.$spacer * 2;
     position: relative;
-    label {
+
+    .controlLabel {
       padding: var.$spacer / 2;
       border-top: var.$border-size solid var.$border-color;
       border-right: var.$border-size solid var.$border-color;
       border-left: var.$border-size solid var.$border-color;
       width: max-content;
       font-size: var.$font-size / 1.5;
-      [for="emailAddress"]:active {
-        background-color: var.$color-secondary;
-      }
     }
+    &:hover .controlLabel {
+      background-color: var.$color-secondary;
+      color: var.$color-text;
+      outline: none;
+    }
+
     .emailIcon {
       position: absolute;
       top: 2.4rem;
@@ -66,9 +70,10 @@ main {
       padding: var.$spacer / 1.1;
       padding-inline-start: 3rem;
 
-      &:focus,
-      &:hover {
+      &:hover,
+      &:focus {
         border: var.$border-size * 2 solid var.$color-secondary;
+        outline: none;
       }
     }
   }

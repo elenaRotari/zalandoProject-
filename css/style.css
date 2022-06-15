@@ -100,7 +100,7 @@ main .formContainer1 {
   padding-bottom: 2rem;
   position: relative;
 }
-main .formContainer1 label {
+main .formContainer1 .controlLabel {
   padding: 0.5rem;
   border-top: 1px solid gray;
   border-right: 1px solid gray;
@@ -108,8 +108,10 @@ main .formContainer1 label {
   width: max-content;
   font-size: 0.6666666667rem;
 }
-main .formContainer1 label [for=emailAddress]:active {
+main .formContainer1:hover .controlLabel {
   background-color: black;
+  color: white;
+  outline: none;
 }
 main .formContainer1 .emailIcon {
   position: absolute;
@@ -127,8 +129,9 @@ main .formContainer1 input {
   padding: 0.9090909091rem;
   padding-inline-start: 3rem;
 }
-main .formContainer1 input:focus, main .formContainer1 input:hover {
+main .formContainer1 input:hover, main .formContainer1 input:focus {
   border: 2px solid black;
+  outline: none;
 }
 main button {
   background-color: black;
