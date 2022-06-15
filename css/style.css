@@ -1,0 +1,18 @@
+/* Error: There is no module with the namespace "var".
+ *   ,
+ * 3 |   border-bottom: var.$border-size solid var.$border-color;
+ *   |                  ^^^^^^^^^^^^^^^^
+ *   '
+ *   sass/_header.scss 3:18  @use
+ *   sass/style.scss 3:1     root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "var".\a   \2577 \a 3 \2502    border-bottom: var.$border-size solid var.$border-color;\a   \2502                   ^^^^^^^^^^^^^^^^\a   \2575 \a   sass/_header.scss 3:18  @use\a   sass/style.scss 3:1     root stylesheet';
+}

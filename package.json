@@ -1,0 +1,22 @@
+{
+  "name": "zalandoproject-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass -w ./sass:./css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elenaRotari/zalandoProject-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  "bugs": {
+    "url": "https://github.com/elenaRotari/zalandoProject-/issues"
+  },
+  "homepage": "https://github.com/elenaRotari/zalandoProject-#readme"
+}

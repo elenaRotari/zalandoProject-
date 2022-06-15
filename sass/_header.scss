@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  border-bottom: var.$border-size solid var.$border-color;
+
+  i {
+    padding: calc(var.$spacer / 2 + 2vw);
+    border-right: var.$border-size solid var.$border-color;
+  }
+  .mobileNav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    li {
+      padding: calc(var.$spacer / 2 + 2vw);
+    }
+  }
+}
