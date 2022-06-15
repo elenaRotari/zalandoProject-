@@ -1,17 +1,30 @@
-header {
+@use "./var";
+.navContainer {
   display: flex;
-  border-bottom: var.$border-size solid var.$border-color;
-
-  i {
-    padding: calc(var.$spacer / 2 + 2vw);
-    border-right: var.$border-size solid var.$border-color;
+  border-bottom: var.$border-size solid
+    rgba($color: var.$border-color, $alpha: 0.3);
+  @media (min-width: 1024px) {
+    display: none;
+  }
+  > a {
+    padding: 0.9rem;
+    color: #444;
   }
   .mobileNav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
+    border-left: var.$border-size solid
+      rgba($color: var.$border-color, $alpha: 0.3);
     li {
-      padding: calc(var.$spacer / 2 + 2vw);
+      padding: calc(var.$spacer * 1.2);
+    }
+    :first-child {
+      font-weight: 600;
+    }
+    a {
+      color: var.$anchor-color;
     }
   }
 }

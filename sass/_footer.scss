@@ -1,0 +1,26 @@
+@use "./var";
+footer {
+  .listFooter {
+    display: flex;
+    justify-content: center;
+    gap: calc(var.$spacer * 2.5);
+
+    a {
+      color: var.$footer-color;
+      font-size: var.$font-size * 0.9;
+      &:hover {
+        border-bottom: var.$border-size solid var.$border-color;
+      }
+    }
+  }
+  .footerIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var.$spacer * 3;
+    a {
+      color: var.$color-primary;
+      font-size: var.$font-size * 1.5;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@use "./var";
+
+.sectionBottom {
+  //   padding-inline: calc(15rem + 3vw);
+  //   padding: 2rem;
+  margin: 0 auto;
+  margin-bottom: calc(var.$spacer * 2.8);
+  button {
+    padding: var.$spacer / 1.5;
+    font-weight: 700;
+    border: var.$border-size * 2 solid var.$color-secondary;
+    background-color: var.$color-text;
+    width: 100%;
+    padding: var.$spacer / 1.1;
+    &:hover {
+      background-color: var.$hover-color;
+      border: none;
+      color: var.$color-text;
+    }
+  }
+  h1 {
+    font-size: calc(var.$font-size * 1.1);
+    margin-bottom: var.$spacer;
+  }
+  @media (min-width: 480px) {
+    width: var.$width-main-small;
+  }
+
+  @media (min-width: 769px) {
+    width: var.$width-main-medium;
+  }
+  @media (min-width: 1024px) {
+    width: var.$width-main-large;
+  }
+}
