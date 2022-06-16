@@ -13,8 +13,9 @@
     padding: calc(var.$spacer / 1.1);
     &:hover {
       background-color: var.$hover-color;
-      border: none;
+      border-color: var.$hover-color;
       color: var.$color-text;
+      cursor: pointer;
     }
   }
   h1 {

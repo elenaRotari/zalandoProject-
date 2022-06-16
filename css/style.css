@@ -153,6 +153,7 @@ main .formContainer button {
 }
 main .formContainer button:hover {
   background-color: #66676e;
+  cursor: pointer;
 }
 main .formContainer1 input:focus ~ .controlLabel1 {
   background-color: black;
@@ -173,6 +174,7 @@ main a {
 }
 main a:hover {
   border-bottom: 3px solid #6328e0;
+  cursor: pointer;
 }
 
 .separateSection {
@@ -195,8 +197,9 @@ main a:hover {
 }
 .sectionBottom button:hover {
   background-color: #66676e;
-  border: none;
+  border-color: #66676e;
   color: white;
+  cursor: pointer;
 }
 .sectionBottom h1 {
   font-size: 1.8rem;
