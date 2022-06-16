@@ -22,11 +22,14 @@
     font-size: calc(var.$font-size * 1.1);
     margin-bottom: var.$spacer;
   }
+  @media (min-width: 350px) {
+    width: var.$width-main-xs;
+  }
   @media (min-width: 480px) {
     width: var.$width-main-small;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 669px) {
     width: var.$width-main-medium;
   }
   @media (min-width: 1024px) {
