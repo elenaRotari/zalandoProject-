@@ -1,8 +1,6 @@
 @use "./var";
 
 .sectionBottom {
-  //   padding-inline: calc(15rem + 3vw);
-  //   padding: 2rem;
   margin: 0 auto;
   margin-bottom: calc(var.$spacer * 2.8);
   button {
