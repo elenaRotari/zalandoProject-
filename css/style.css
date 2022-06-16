@@ -80,7 +80,7 @@ main {
 }
 @media (min-width: 1024px) {
   main {
-    width: 30.5%;
+    width: 30.2%;
   }
 }
 main h1 {
@@ -114,20 +114,20 @@ main .formContainer1:hover .controlLabel {
 }
 main .formContainer1 .emailIcon {
   position: absolute;
-  top: 2.4rem;
+  top: 2.6rem;
   left: 0.7rem;
   font-size: 1.5rem;
 }
 main .formContainer1 .augeIcon {
   position: absolute;
-  top: 2.4rem;
+  top: 2.7rem;
   right: 0.9rem;
   font-size: 1.5rem;
 }
 main .formContainer1 input {
   padding: 0.9090909091rem;
   padding-inline-start: 3rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border: 1px solid black;
 }
 main .formContainer1 input:hover, main .formContainer1 input:focus {
@@ -153,7 +153,8 @@ main .formContainer1 a {
 main .formContainer1 a:hover {
   border-bottom: 2px solid #6328e0;
 }
-main .separateSection {
+
+.separateSection {
   margin-bottom: 2rem;
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
@@ -196,7 +197,7 @@ main .separateSection {
 }
 @media (min-width: 1024px) {
   .sectionBottom {
-    width: 30.5%;
+    width: 30.2%;
   }
 }
 

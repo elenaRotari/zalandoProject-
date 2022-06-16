@@ -56,20 +56,20 @@ main {
 
     .emailIcon {
       position: absolute;
-      top: 2.4rem;
+      top: 2.6rem;
       left: 0.7rem;
       font-size: 1.5rem;
     }
     .augeIcon {
       position: absolute;
-      top: 2.4rem;
+      top: 2.7rem;
       right: 0.9rem;
       font-size: 1.5rem;
     }
     input {
       padding: var.$spacer / 1.1;
       padding-inline-start: 3rem;
-      font-size: 1rem;
+      font-size: var.$font-size * 1.1;
       border: var.$border-size solid var.$color-secondary;
 
       &:hover,
@@ -99,9 +99,9 @@ main {
       }
     }
   }
-  .separateSection {
-    margin-bottom: 2rem;
-    border-bottom: var.$border-size solid
-      rgba($color: var.$border-color, $alpha: 0.3);
-  }
+}
+.separateSection {
+  margin-bottom: 2rem;
+  border-bottom: var.$border-size solid
+    rgba($color: var.$border-color, $alpha: 0.3);
 }
