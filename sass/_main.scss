@@ -2,15 +2,13 @@
 
 .logoZalando {
   padding-left: 1.2rem;
-  padding-top: var.$spacer / 1.3;
+  padding-top: calc(var.$spacer / 1.3);
   margin-bottom: 1.3rem;
   @media (min-width: 1277px) {
     margin-left: 13vw;
   }
 }
 main {
-  // padding-inline: calc(15rem + 3vw);
-  // padding: 1rem;
   margin: 0 auto;
   margin-bottom: 2rem;
   @media (min-width: 350px) {
@@ -28,60 +26,60 @@ main {
   }
   h1 {
     margin-bottom: var.$spacer;
-    font-size: calc(var.$font-size * 1.1);
-    font-weight: 900;
+    font-size: calc(var.$font-size * 1.5);
+    font-weight: bolder;
     @media (min-width: 769px) {
       font-size: calc(var.$font-size * 1.7);
     }
   }
-  .formContainer1 {
+  .formContainer {
     display: flex;
     flex-direction: column;
-    padding-bottom: var.$spacer * 2;
+    padding-bottom: calc(var.$spacer * 2);
     position: relative;
+    .formContainer1,
+    .formContainer2 {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-bottom: calc(var.$spacer * 1.5);
+      position: relative;
 
-    .controlLabel {
-      padding: var.$spacer / 2;
-      border-top: var.$border-size solid var.$border-color;
-      border-right: var.$border-size solid var.$border-color;
-      border-left: var.$border-size solid var.$border-color;
-      width: max-content;
-      font-size: var.$font-size / 1.5;
-    }
-    &:hover .controlLabel {
-      background-color: var.$color-secondary;
-      color: var.$color-text;
-      outline: none;
-    }
+      .controlLabel1,
+      .controlLabel2 {
+        padding: calc(var.$spacer / 2);
+        border-top: var.$border-size solid var.$border-color;
+        border-right: var.$border-size solid var.$border-color;
+        border-left: var.$border-size solid var.$border-color;
+        width: max-content;
+        font-size: calc(var.$font-size / 1.3);
+      }
 
-    .emailIcon {
-      position: absolute;
-      top: 2.6rem;
-      left: 0.7rem;
-      font-size: 1.5rem;
-    }
-    .augeIcon {
-      position: absolute;
-      top: 2.7rem;
-      right: 0.9rem;
-      font-size: 1.5rem;
-    }
-    input {
-      padding: var.$spacer / 1.1;
-      padding-inline-start: 3rem;
-      font-size: var.$font-size * 1.1;
-      border: var.$border-size solid var.$color-secondary;
-
-      &:hover,
-      &:focus {
-        border: var.$border-size * 2 solid var.$color-secondary;
-        outline: none;
+      .emailIcon {
+        position: absolute;
+        top: 2.6rem;
+        left: 0.7rem;
+        font-size: 1.5rem;
+      }
+      .augeIcon {
+        position: absolute;
+        top: 2.7rem;
+        right: 0.9rem;
+        font-size: 1.5rem;
+      }
+      input {
+        padding: calc(var.$spacer / 1.1);
+        padding-inline-start: calc(var.$font-size * 3);
+        font-size: calc(var.$font-size * 1.1);
+        border: var.$border-size solid var.$color-secondary;
+        &:hover,
+        &:focus {
+          outline: calc(var.$border-size * 2) solid var.$color-secondary;
+        }
       }
     }
-
     button {
       background-color: var.$color-secondary;
-      padding: var.$spacer / 1.1;
+      padding: calc(var.$spacer / 1);
       color: var.$color-text;
       border: none;
       font-weight: 700;
@@ -90,18 +88,34 @@ main {
         background-color: var.$hover-color;
       }
     }
-    a {
-      font-size: var.$font-size;
-      font-weight: 700;
-      color: var.$anchor-color;
-      &:hover {
-        border-bottom: var.$border-size * 2 solid var.$anchor-color;
-      }
+  }
+  .formContainer1 {
+    input:focus ~ .controlLabel1 {
+      background-color: var.$color-secondary;
+      color: var.$color-text;
+      outline: calc(var.$border-size * 2) solid var.$color-secondary;
+      border: none;
+    }
+  }
+  .formContainer2 {
+    input:focus ~ .controlLabel2 {
+      background-color: var.$color-secondary;
+      color: var.$color-text;
+      outline: calc(var.$border-size * 2) solid var.$color-secondary;
+      border: none;
+    }
+  }
+  a {
+    font-size: calc(var.$font-size * 1.2);
+    font-weight: 900;
+    color: var.$anchor-color;
+    &:hover {
+      border-bottom: calc(var.$border-size * 3) solid var.$anchor-color;
     }
   }
 }
 .separateSection {
-  margin-bottom: 2rem;
+  margin: calc(var.$font-size * 3) 0;
   border-bottom: var.$border-size solid
     rgba($color: var.$border-color, $alpha: 0.3);
 }

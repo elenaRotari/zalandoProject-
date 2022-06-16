@@ -6,12 +6,13 @@
   margin: 0 auto;
   margin-bottom: calc(var.$spacer * 2.8);
   button {
-    padding: var.$spacer / 1.5;
+    font-size: var.$font-size;
+    padding: calc(var.$spacer / 1.5);
     font-weight: 700;
-    border: var.$border-size * 2 solid var.$color-secondary;
+    border: calc(var.$border-size * 2) solid var.$color-secondary;
     background-color: var.$color-text;
     width: 100%;
-    padding: var.$spacer / 1.1;
+    padding: calc(var.$spacer / 1.1);
     &:hover {
       background-color: var.$hover-color;
       border: none;
@@ -19,7 +20,7 @@
     }
   }
   h1 {
-    font-size: calc(var.$font-size * 1.1);
+    font-size: calc(var.$font-size * 1.8);
     margin-bottom: var.$spacer;
   }
   @media (min-width: 350px) {

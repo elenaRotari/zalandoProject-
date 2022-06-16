@@ -5,7 +5,8 @@ $image_width: 130px;
 $width-main-xs: 80%;
 $width-main-small: 65%;
 $width-main-medium: 50%;
-$width-main-large: 30.2%;
+$width-main-large: calc(30.4% + 2vw);
+
 $border-color: gray;
 $hover-color: #66676e;
 $footer-color: #333;
